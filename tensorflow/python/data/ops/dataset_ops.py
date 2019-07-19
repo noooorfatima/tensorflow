@@ -2621,7 +2621,7 @@ class StructuredFunctionWrapper(object):
       # it is more likely that the list arose from returning the
       # result of an operation (such as `tf.numpy_function()`) that returns a
       # list of not-necessarily-stackable tensors, we treat the
-      # returned value is a `tuple` instead. A user wishing to pack
+      # returned value as a `tuple` instead. A user wishing to pack
       # the return value into a single tensor can use an explicit
       # `tf.stack()` before returning.
       if isinstance(ret, list):
